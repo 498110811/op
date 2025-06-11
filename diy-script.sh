@@ -45,7 +45,7 @@ sed -i '/set wireless.radio${devidx}.disabled=0/a\\t\t\tset wireless.radio${devi
 # sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
 # 删除ipv6前缀
-#sed -i 's/auto//' package/base-files/files/bin/config_generate
+sed -i 's/auto//' package/base-files/files/bin/config_generate
 
 # 移除要替换的包
 #rm -rf feeds/packages/net/mosdns
