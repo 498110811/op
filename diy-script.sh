@@ -85,7 +85,15 @@ git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-netdata 
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 #新增风扇通用控制插件
-git clone https://github.com/JiaY-shi/fancontrol.git package/luci-app-fancontrol
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages fancontrol package/fancontrol
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-fancontrol package/luci-app-fancontrol
+
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages cloudreve package/cloudreve
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-cloudreve package/luci-app-cloudreve
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-guest-wifi package/luci-app-guest-wifi
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-npc package/luci-app-npc
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-pikpak-webdav package/luci-app-pikpak-webdav
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages pikpak-webdav package/pikpak-webdav
 
 # 科学上网插件
 #git clone --depth=1 https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
