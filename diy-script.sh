@@ -74,14 +74,14 @@ function git_sparse_clone() {
 
 # 添加额外插件
 git_sparse_clone main https://github.com/djylb/nps-openwrt luci-app-npc package/luci-app-npc
-git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash package/luci-app-openclash
-git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall luci-app-passwall package/luci-app-passwall
-git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall2 luci-app-passwall2 package/luci-app-passwall2
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/luci-app-lucky
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-openclash package/luci-app-openclash
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-passwall package/luci-app-passwall
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-passwall2 package/luci-app-passwall2
+# git clone https://github.com/sirpdboy/luci-app-lucky.git package/luci-app-lucky
 # git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 # git clone --depth=1 -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush package/luci-app-serverchan
 #git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
-#git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 #新增风扇通用控制插件
