@@ -112,7 +112,7 @@ jobs:
         sed -i "/src-git quectel_cm_5G /d; 1 i src-git quectel_cm_5G https://github.com/xx-vv/quectel_cm_5G" feeds.conf.default
         
         ./scripts/feeds update -a
-        # rm -rf feeds/luci/themes/luci-theme-design
+        rm -rf feeds/luci/themes/luci-theme-design
         ./scripts/feeds install -a
 
     - name: 加载自定义配置
