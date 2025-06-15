@@ -85,8 +85,8 @@ git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-netdata 
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 #新增风扇通用控制插件
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages fancontrol package/fancontrol
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-fancontrol package/luci-app-fancontrol
+# git_sparse_clone main https://github.com/kiddin9/kwrt-packages fancontrol package/fancontrol
+# git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-fancontrol package/luci-app-fancontrol
 
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages cloudreve package/cloudreve
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-cloudreve package/luci-app-cloudreve
