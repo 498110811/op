@@ -207,17 +207,17 @@ jobs:
           - ${{ env.COMMIT_MESSAGE }}
           - ${{ env.COMMIT_HASH }}
 
-    # - name: 删除旧版 Workflows
-    #   uses: Mattraks/delete-workflow-runs@main
-    #   with:
-    #     token: ${{ secrets.GITHUB_TOKEN }}
-    #     retain_days: 7
-    #     keep_minimum_runs: 0
+    - name: 删除旧版 Workflows
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        retain_days: 7
+        keep_minimum_runs: 0
 
-    # - name: 删除旧版 Releases
-    #   uses: dev-drprasad/delete-older-releases@master
-    #   with:
-    #     keep_latest: 15
-    #     delete_tags: true
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: 删除旧版 Releases
+      uses: dev-drprasad/delete-older-releases@master
+      with:
+        keep_latest: 15
+        delete_tags: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
