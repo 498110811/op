@@ -91,7 +91,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/l
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages cloudreve package/cloudreve
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-cloudreve package/luci-app-cloudreve
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-guest-wifi package/luci-app-guest-wifi
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-npc package/luci-app-npc
+# git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-npc package/luci-app-npc
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-pikpak-webdav package/luci-app-pikpak-webdav
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages pikpak-webdav package/pikpak-webdav
 
