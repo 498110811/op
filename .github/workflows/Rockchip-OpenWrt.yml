@@ -110,6 +110,9 @@ jobs:
         sed -i "/src-git modem /d; 1 i src-git modem https://github.com/FUjr/modem_feeds.git" feeds.conf.default
         #新增quectel_cm_5G插件
         sed -i "/src-git quectel_cm_5G /d; 1 i src-git quectel_cm_5G https://github.com/xx-vv/quectel_cm_5G" feeds.conf.default
+        #新增风扇控制
+        sed -i "/src-git fancontrol /d; 1 i src-git fancontrol https://github.com/rockjake/luci-app-fancontrol" feeds.conf.default
+        
         
         ./scripts/feeds update -a
         rm -rf feeds/luci/themes/luci-theme-design
