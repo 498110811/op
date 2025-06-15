@@ -79,7 +79,8 @@ git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall luci-app-pas
 git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall2 luci-app-passwall2 package/luci-app-passwall2
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/luci-app-lucky
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-app-serverchan
+git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages wrtbwmon package/wrtbwmon
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
