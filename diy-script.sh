@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#临时禁用LLVM_DOWNLOAD_CI_LLVM
-export CARGO_PROFILE_DEV_LLVM_DOWNLOAD_CI_LLVM=false
 #修改应用名称
 replace_text() {
   search_text="$1" new_text="$2"
