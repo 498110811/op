@@ -107,7 +107,7 @@ jobs:
         #sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/498110811\/luci.git/g' feeds.conf.default
         sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/coolsnowwolf\/luci.git/g' feeds.conf.default
         #修改packages源
-        sed -i 's/498110811\/packages/coolsnowwolf\/packages/g' feeds.conf.default
+        #sed -i 's/498110811\/packages/coolsnowwolf\/packages/g' feeds.conf.default
         #新增modem拨号插件
         sed -i "/src-git modem /d; 1 i src-git modem https://github.com/FUjr/modem_feeds.git" feeds.conf.default
         #新增quectel_cm_5G插件
