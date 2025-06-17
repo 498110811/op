@@ -86,6 +86,7 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+git_sparse_clone main https://github.com/498110811/packages_rust rust feeds/packages/lang/rust
 #新增风扇通用控制插件
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages fancontrol package/fancontrol
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-fancontrol package/luci-app-fancontrol
