@@ -118,6 +118,9 @@ jobs:
         
         ./scripts/feeds update -a
         rm -rf feeds/luci/themes/luci-theme-design
+        cd feeds/packages
+        git checkout e94ec9e46e60ea31aeb9e960c5f799d8786d4276
+        cd $OPENWRT_PATH
         ./scripts/feeds install -a
 
     - name: 加载自定义配置
