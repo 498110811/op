@@ -60,6 +60,7 @@ sed -i 's/auto//' package/base-files/files/bin/config_generate
 #rm -rf feeds/luci/applications/luci-app-serverchan
 #rm -rf feeds/package/helloworld
 rm -rf feeds/packages/lang/golang
+rm -rf feeds/packages/lang/rust
 #rm -rf feeds/packages/net/v2ray-geodata
 
 # Git稀疏克隆，只克隆指定目录到本地
