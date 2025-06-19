@@ -109,7 +109,7 @@ jobs:
         #sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/498110811\/luci.git/g' feeds.conf.default
         #sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/coolsnowwolf\/luci.git/g' feeds.conf.default
         #新增modem拨号插件
-        #sed -i "/src-git modem /d; 1 i src-git modem https://github.com/498110811/qmodem.git" feeds.conf.default
+        sed -i "/src-git modem /d; 1 i src-git modem https://github.com/FUjr/QModem.git" feeds.conf.default
         #新增quectel_cm_5G插件
         sed -i "/src-git quectel_cm_5G /d; 1 i src-git quectel_cm_5G https://github.com/xx-vv/quectel_cm_5G" feeds.conf.default
         cp -f quectel_MHI/mt7621.mk target/linux/ramips/image/mt7621.mk
