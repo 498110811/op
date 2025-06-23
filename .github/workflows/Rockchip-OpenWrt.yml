@@ -101,8 +101,8 @@ jobs:
       run: |
         cd $OPENWRT_PATH
         #替换DTS文件
-        #git clone --depth=1 https://github.com/498110811/modem
-        #cp -f modem/rk3588-srcm3588-io.dts target/linux/rockchip/files/arch/arm64/boot/dts/rockchip/rk3588-srcm3588-io.dts
+        git clone --depth=1 https://github.com/498110811/quectel_MHI
+        cp -f quectel_MHI/rk3588-srcm3588-io.dts target/linux/rockchip/files/arch/arm64/boot/dts/rockchip/rk3588-srcm3588-io.dts
         #修改luci源
         #sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/498110811\/luci.git/g' feeds.conf.default
         sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/coolsnowwolf\/luci.git/g' feeds.conf.default
