@@ -25,7 +25,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci-
 
 # 开启wifi选项
 sed -i 's/disabled=*.*/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i 's/ssid=*.*/ssid=Cyber_3588_AIB/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/ssid=*.*/ssid=Xiaomi_402/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 设置wifi加密方式为psk2+ccmp,wifi密码为88888889
 #sed -i 's/encryption=none/encryption=psk2+ccmp/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
@@ -85,7 +85,7 @@ git_sparse_clone main https://github.com/kiddin9/kwrt-packages wrtbwmon package/
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 #git_sparse_clone main https://github.com/498110811/packages_rust rust feeds/packages/lang/rust
 #新增风扇通用控制插件
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages fancontrol package/fancontrol
