@@ -19,7 +19,7 @@ replace_text "移动网络" "移动蜂窝"
 
 # 修改默认皮肤
 sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci/Makefile
-sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci-nginx/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci-nginx/Makefile
 sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci-ssl-nginx/Makefile
 sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci-light/Makefile
 
@@ -59,7 +59,7 @@ sed -i 's/auto//' package/base-files/files/bin/config_generate
 #rm -rf feeds/luci/applications/luci-app-netdata
 #rm -rf feeds/luci/applications/luci-app-serverchan
 #rm -rf feeds/package/helloworld
-rm -rf feeds/packages/lang/golang
+#rm -rf feeds/packages/lang/golang
 #rm -rf feeds/packages/lang/rust
 #rm -rf feeds/packages/net/v2ray-geodata
 
@@ -85,7 +85,7 @@ git_sparse_clone main https://github.com/kiddin9/kwrt-packages wrtbwmon package/
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
-git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
+#git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 #git_sparse_clone main https://github.com/498110811/packages_rust rust feeds/packages/lang/rust
 #新增风扇通用控制插件
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages fancontrol package/fancontrol
