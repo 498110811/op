@@ -76,12 +76,12 @@ function git_sparse_clone() {
 # 添加额外插件
 git_sparse_clone main https://github.com/djylb/nps-openwrt luci-app-npc package/luci-app-npc
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash package/luci-app-openclash
-git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall luci-app-passwall package/luci-app-passwall
-git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall2 luci-app-passwall2 package/luci-app-passwall2
+#git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall luci-app-passwall package/luci-app-passwall
+#git_sparse_clone main https://github.com/xiaorouji/openwrt-passwall2 luci-app-passwall2 package/luci-app-passwall2
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/luci-app-lucky
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git package/luci-app-adguardhome
 git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages wrtbwmon package/wrtbwmon
+#git_sparse_clone main https://github.com/kiddin9/kwrt-packages wrtbwmon package/wrtbwmon
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
@@ -92,12 +92,12 @@ git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-fancontrol package/luci-app-fancontrol
 git_sparse_clone main https://github.com/fanteral/luci-app-fancontrol luci-app-fancontrol package/luci-app-fancontrol
 
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages cloudreve package/cloudreve
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-cloudreve package/luci-app-cloudreve
+#git_sparse_clone main https://github.com/kiddin9/kwrt-packages cloudreve package/cloudreve
+#git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-cloudreve package/luci-app-cloudreve
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-guest-wifi package/luci-app-guest-wifi
 # git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-npc package/luci-app-npc
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-pikpak-webdav package/luci-app-pikpak-webdav
-git_sparse_clone main https://github.com/kiddin9/kwrt-packages pikpak-webdav package/pikpak-webdav
+#git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-pikpak-webdav package/luci-app-pikpak-webdav
+#git_sparse_clone main https://github.com/kiddin9/kwrt-packages pikpak-webdav package/pikpak-webdav
 
 # 科学上网插件
 #git clone --depth=1 https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
