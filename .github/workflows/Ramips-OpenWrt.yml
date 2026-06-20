@@ -106,7 +106,7 @@ jobs:
         git clone --depth=1 https://github.com/498110811/quectel_MHI
         tar -xvf quectel_MHI/quectel_MHI.tar.gz -C package/wwan/driver
         # 新增启用MH5000-82模块状态
-        unzip quectel_MHI/mmcli-enable.zip -C package
+        unzip -d package quectel_MHI/mmcli-enable.zip
         #修改luci源
         #sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/498110811\/luci.git/g' feeds.conf.default
         #sed -i 's/coolsnowwolf\/luci.git;openwrt-23.05/coolsnowwolf\/luci.git/g' feeds.conf.default
