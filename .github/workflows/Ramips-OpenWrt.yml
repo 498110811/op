@@ -102,9 +102,9 @@ jobs:
       run: |
         cd $OPENWRT_PATH
         #替换quectel_MHI和新增c8-571
-        # rm -rf package/wwan/driver/quectel_MHI
+        rm -rf package/wwan/driver/quectel_MHI
         git clone --depth=1 https://github.com/498110811/quectel_MHI
-        # tar -xvf quectel_MHI/quectel_MHI.tar.gz -C package/wwan/driver
+        tar -xvf quectel_MHI/quectel_MHI.tar.gz -C package/wwan/driver
         # 新增启用MH5000-82模块状态
         # unzip -d package quectel_MHI/mmcli-enable.zip
         #修改luci源
